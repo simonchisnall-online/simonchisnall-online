@@ -18,7 +18,7 @@ models:
   home:
     type: page
     label: Home
-    template: home
+    layout: home
     file: index.md
     singleInstance: true
     fields:
