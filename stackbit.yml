@@ -53,7 +53,6 @@ models:
         name: skills
         items:
           type: object
-          label: Skill
           labelField: title
           fields:
             - type: string
@@ -74,7 +73,6 @@ models:
         name: interests
         items:
           type: object
-          label: Interest
           labelField: title
           fields:
             - type: string
@@ -92,7 +90,6 @@ models:
         name: experiences
         items:
           type: object
-          label: Experience
           labelField: title
           fields:
             - type: string
