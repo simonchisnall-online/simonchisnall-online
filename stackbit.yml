@@ -20,7 +20,6 @@ models:
   home:
     type: page
     label: Home
-    layout: homepage
     file: index.md
     singleInstance: true
     fields:
