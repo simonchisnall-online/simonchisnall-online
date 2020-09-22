@@ -20,7 +20,7 @@ models:
   home:
     type: page
     label: Home
-    layout: home
+    layout: homepage
     file: index.md
     singleInstance: true
     fields:
@@ -90,7 +90,7 @@ models:
     fields:
       - type: list
         name: experiences
-        abel: A list of Experience
+        label: A list of Experience
         items:
           type: object
           labelField: title

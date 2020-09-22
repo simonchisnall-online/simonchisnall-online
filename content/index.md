@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: home
+layout: homepage
 first_name: "Simon"
 last_name: "Chisnall"
 sub_heading: "Developer"
