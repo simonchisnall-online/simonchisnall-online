@@ -1,0 +1,12 @@
+{
+  "interests": [
+    {
+      "title": "Scripting languages",
+      "notes": "PHP, JS, Bash, Python"
+    },
+    {
+      "title": "Hacking",
+      "notes" : "Linux, Crawlers, Bots, Network"
+    }
+  ]
+}

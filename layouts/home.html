@@ -1,0 +1,58 @@
+{% extends "body.html" %} {% block content %}
+
+<div class="container">
+  <div class="hero">
+    <h1 class="name">
+      <strong>{{page.params.first_name}}</strong> {{page.params.last_name}}
+    </h1>
+    <span class="job-title">{{ page.params.sub_heading }}</span>
+    <span class="email">{{ page.params.email }}</span>
+
+    <h2 class="lead">{{ page.params.lead }}</h2>
+  </div>
+</div>
+<!-- Skills and intrest section -->
+<div class="container">
+  <div class="sections">
+    <h2 class="section-title">Skills</h2>
+    {% for skill in site.data.skills.skills %}
+    <div class="list-card">
+      <span class="exp">{{skill.experience}}</span>
+      <div>
+        <h3>{{skill.title}}</h3>
+        <span>{{skill.notes}}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="sections">
+    <h2 class="section-title">Interests</h2>
+    {% for interest in site.data.interests.interests %}
+    <div class="list-card">
+      <div>
+        <h3>{{interest.title}}</h3>
+        <span>{{interest.notes}}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+<!-- Timeeline -->
+
+<div class="container cards">
+  <h2 class="section-title">Experience</h2>
+  <ol class="timeline">
+   {% for experience in site.data.experiences.experiences %}
+    <li>
+      <span class="point"></span>
+      <p class="description">{{experience.title}}</p>
+      <span class="date">{{experience.dates}}</span>
+    </li>
+{% endfor %}
+
+  </ol>
+</div>
+
+{% endblock %}

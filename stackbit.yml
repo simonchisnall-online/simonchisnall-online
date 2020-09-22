@@ -1,0 +1,95 @@
+# stackbit.yaml
+stackbitVersion: ~0.2.39
+models:
+  config:
+    type: config
+    label: Global Site Config
+    fields:
+      - type: string
+        name: homepage_heading
+        label: Homepage Heading
+        description: The title displayed on the homepage.
+  home:
+    type: page
+    label: Home
+    template: home
+    file: index.md
+    singleInstance: true
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the page.
+        required: true
+      - type: string
+        name: first_name
+        label: First Name
+      - type: string
+        name: last_name
+        label: Last Name
+      - type: string
+        name: sub_heading
+        label: Sub Heading
+      - type: string
+        name: email
+        label: Email
+      - type: string
+        name: lead
+        label: Lead
+  skills:
+    type: data
+    label: Skills
+    file: skills.json
+    fields:
+      - type: list
+        name: skills
+        items:
+          type: object
+          label: Skill
+          labelField: title
+          fields:
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: experience
+              label: Experience
+            - type: string
+              name: notes
+              label: Notes
+  interests:
+    type: data
+    label: Interests
+    file: interests.json
+    fields:
+      - type: list
+        name: interests
+        items:
+          type: object
+          label: Interest
+          labelField: title
+          fields:
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: notes
+              label: Notes
+  experiences:
+    type: data
+    label: Experiences
+    file: experiences.json
+    fields:
+      - type: list
+        name: experiences
+        items:
+          type: object
+          label: Experience
+          labelField: title
+          fields:
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: dates
+              label: Dates

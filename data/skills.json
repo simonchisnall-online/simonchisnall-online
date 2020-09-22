@@ -1,0 +1,14 @@
+{
+  "skills": [
+    {
+      "title": "Design integration",
+      "experience": "+ 3 years",
+      "notes": "Style and tools, JS Frameworks"
+    },
+    {
+      "title": "Object programming & frameworks",
+      "experience": "+ 5 years",
+      "notes" : "PHP, Symfony, Laravel, Silex, …"
+    }
+  ]
+}
