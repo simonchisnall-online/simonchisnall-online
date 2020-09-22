@@ -1,6 +1,6 @@
 ---
 title: Home
-template: home
+layout: home
 first_name: "Simon"
 last_name: "Chisnall"
 sub_heading: "Developer"
