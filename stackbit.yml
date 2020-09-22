@@ -51,6 +51,7 @@ models:
     fields:
       - type: list
         name: skills
+        label: A list of Skills
         items:
           type: object
           labelField: title
@@ -71,6 +72,7 @@ models:
     fields:
       - type: list
         name: interests
+        label: A list of Interests
         items:
           type: object
           labelField: title
@@ -88,6 +90,7 @@ models:
     fields:
       - type: list
         name: experiences
+        abel: A list of Experience
         items:
           type: object
           labelField: title
