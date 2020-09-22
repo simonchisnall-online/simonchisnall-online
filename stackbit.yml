@@ -5,6 +5,7 @@ staticDir: static  # folder with files that are copied to publishDir as is
 uploadDir: images  # folder with media files, relative to staticDir
 pagesDir: content
 dataDir: data
+publishDir: dist   # folder with the generated static site files
 models:
   config:
     type: config
