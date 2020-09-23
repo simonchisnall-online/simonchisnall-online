@@ -1,3 +1,9 @@
 # config.yaml
 baseurl: "/"
 title: "Minimal Resume"
+sass:
+  input_file: sass/styles.scss.njk
+  output_file: assets/css/style.css
+  indentWidth: 4
+  outputStyle: nested
+  precision: 10
