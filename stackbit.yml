@@ -31,11 +31,6 @@ models:
         description: The title of the page.
         required: true
       - type: string
-        name: layout
-        label: Layout
-        description: Bug fixing.
-        required: true
-      - type: string
         name: first_name
         label: First Name
       - type: string
