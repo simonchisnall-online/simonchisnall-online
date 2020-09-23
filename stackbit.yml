@@ -1,6 +1,6 @@
 # stackbit.yaml
 stackbitVersion: ~0.3.0
-ssgName: gatsby
+ssgName: unibit
 buildCommand: gatsby build  # build command that builds static site
 staticDir: static  # folder with files that are copied to publishDir as is
 uploadDir: images  # folder with media files, relative to staticDir
